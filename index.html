@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desenvolvedor" content="Leximibel Langa">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons -->
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'> <!-- or -->
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <div class="detalhes-pessoais">
+            <i class='bx  bx-list-ul logo'></i>
+            <p>
+                <strong>Desenvolvedor: </strong>
+                Leximibel Langa
+            </p>
+            <p>
+                <strong>Data:</strong>
+                <time datetime="01-10-2025">01 de outubro de 2025</time>
+            </p>
+            <p>
+                <strong>Versao:</strong> 1.0
+            </p>
+            <p>
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/leximibellanga/" target="_blank">leximibellanga</a>
+            </p>
+        </div>
+
+        <div class="adicionar-tarefa">
+            <input 
+                type="text" 
+                name="novaTarefa" 
+                id="novaTarefa" 
+                placeholder="Digite sua nova tarefa" 
+                required 
+                minlength="3"
+            >
+            <button type="submit" id="botao-adicionar"><span>+</span> Adicionar</button>
+        </div>
+
+        <div class="quantidade-tarefas">
+            <aside>
+                <p>Todas</p>
+                <input
+                    type="number" 
+                    name="nrTotal" 
+                    id="nrTotal" 
+                    value="0" 
+                    disabled
+                >
+            </aside>
+            <aside>
+                <p>Pendentes</p>
+                <input 
+                    type="number" 
+                    name="nrPendente" 
+                    id="nrPendentes" 
+                    value="0" 
+                    disabled
+                >
+            </aside>
+            <aside>
+                <p>Concluidas</p>
+                <input 
+                    type="number" 
+                    name="nrConcluido" 
+                    id="nrConcluidas" 
+                    value="0" 
+                    disabled
+                >
+            </aside>
+        </div>
+
+        <div class="lista-tarefas">
+            <ul id="lista-tarefas">
+                <li>
+                    Codificar
+                    <section>
+                        <button class="concluir" id="concluir">concluir</button>
+                        <button class="apagar" id="apagar">apagar</button>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    
+    <!-- JS -->
+    <script src="javascript.js"></script>
+</body>
+</html>
+
